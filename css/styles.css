@@ -1,0 +1,171 @@
+:root {
+    --primary: #3F1651;
+    --secondary: #F89F5B; /* 101, 55, 128 */
+    --tertiary : #653780;
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+/* event form */
+
+#subscription {
+    background: linear-gradient(rgba(63, 22, 81, 0.8), rgba(63, 22, 81, 0.8)), url("../img/subscription.png");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* alinhando de acordo com o eixo y */
+    color: var(--text-color);
+}
+
+
+#disclaimer h1,
+#disclaimer .opening-date {
+  color: var(--secondary);
+}
+
+#disclaimer h1 {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-me {
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-size: 1.85em;
+    max-width: 350px;
+    font-weight: 555;
+    margin-bottom: 2em;
+}
+
+#disclaimer p {
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .opening-date {
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color: var(--tertiary);
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 22%;
+}
+
+#subscription-form p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#subscription-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+#subscription-form label {
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#subscription-form select {
+    background-color: white;
+    color: #767676;
+    /* text-align: center; */
+    letter-spacing: 0.2em;
+}
+
+.btn {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 0.75em;
+    opacity: 0.8;   
+}
+
+.btn:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+/* benefits */
+
+#key-benefits h1 {
+    background-color: var(--tertiary);
+    text-align: center;
+    padding: 2em;
+    font-weight: bold;
+    font-size: 2.3em;
+    color: var(--primary);
+    
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-secondary);
+}
+
+.benefit .benefit-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#benefit-1 {
+    background-image: url("../img/instagram-icon.png");
+}
+
+#benefit-2 {
+    background-image: url("../img/linkedin-icon.png");
+}
+
+#benefit-3 {
+    background-image: url("../img/github-icon.png");
+}
+
