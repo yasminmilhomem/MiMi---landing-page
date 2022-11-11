@@ -157,6 +157,10 @@ body {
     text-align: center;
 }
 
+.benefit i{
+    font-size: 10em;
+}
+
 #benefit-1 {
     background-image: url("../img/instagram-icon.png");
 }
@@ -169,3 +173,50 @@ body {
     background-image: url("../img/github-icon.png");
 }
 
+/* event location */
+
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(63, 22, 81, 0.8), rgba(63, 22, 81, 0.8)), url("../img/section-local.png");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#address,
+#about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    color: var(--secondary);
+    font-size: 12em;
+    margin-right: 0.5em;
+}
+
+#address-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    font-size: 1.4em;
+}
+
+#about-location h3 {
+    color: var(--secondary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
