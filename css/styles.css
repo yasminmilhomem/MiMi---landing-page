@@ -91,7 +91,6 @@
 #subscription-form select {
     background-color: white;
     color: #767676;
-    /* text-align: center; */
     letter-spacing: 0.2em;
 }
 
@@ -323,17 +322,17 @@
     flex-direction: column;
     justify-content: center;
     line-height: 1.5;
-    margin: 40px;
+    margin: 12px;
 }
 
 #footer h3{
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 800;
     color: var(--secondary);
 }
 
 #footer p {
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: 515;
 }
 
@@ -348,8 +347,48 @@
 
 }
 
-@media (max-width: 800px) {
-    .detail {
+/* mobile */
+
+@media (max-width: 450px) {
+    /* event form */
+    #subscription {
         flex-direction: column;
+        height: auto;
     }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h1 {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 85%;
+        margin-bottom: 2em;
+    }
+
+    /* benefits */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+    /* event service */
+    #service {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+    /* event details conteiner */
+    /* call to action */
+    /* footer */
 }
